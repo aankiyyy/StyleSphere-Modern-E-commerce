@@ -93,6 +93,26 @@
     <p>© 2025 StyleSphere. All rights reserved.</p>
   </footer>
 
+
+
+  /* Extra custom CSS (on top of Tailwind) */
+
+body {
+  scroll-behavior: smooth;
+}
+
+#toast {
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(20px); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(20px); }
+}
+
+
   <!-- ✅ Custom JS -->
   <script src="script.js"></script>
 </body>
